@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Art Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #b22222;
+      color: white;
+      text-align: center;
+      padding: 3%; /* responsive padding */
+    }
+    h1 {
+      margin: 0;
+      font-size: 250%; /* scales with window */
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); /* responsive columns */
+      gap: 3%; /* spacing between items */
+      padding: 5%; /* responsive padding */
+    }
+    .artwork {
+      border: 0.5% solid #ccc;
+      padding: 3%;
+      background: white;
+      text-align: center;
+      box-shadow: 0.5% 0.5% 1% rgba(0,0,0,0.1);
+    }
+    .artwork img {
+      width: 90%; /* scales image to container */
+      height: auto;
+    }
+    .artwork h2 {
+      font-size: 150%;
+      margin: 2% 0;
+    }
+    .artwork p {
+      font-size: 100%;
+      margin: 2% 0;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 2%;
+      margin-top: 5%;
+      font-size: 90%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Digital Art Gallery</h1>
+    <p>By Landen</p>
+  </header>
+
+  <section class="gallery">
+    <div class="artwork">
+      <img src="images/art1.jpg" alt="Artwork 1">
+      <h2>Title of Artwork 1</h2>
+      <p>Brief description of this piece.</p>
+    </div>
+    <div class="artwork">
+      <img src="images/art2.jpg" alt="Artwork 2">
+      <h2>Title of Artwork 2</h2>
+      <p>Brief description of this piece.</p>
+    </div>
+    <div class="artwork">
+      <img src="images/art3.jpg" alt="Artwork 3">
+      <h2>Title of Artwork 3</h2>
+      <p>Brief description of this piece.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Landen | Contact: your.email@example.com</p>
+  </footer>
+</body>
+</html>
